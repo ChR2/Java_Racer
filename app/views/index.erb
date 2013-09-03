@@ -1,0 +1,27 @@
+
+<div class="container">
+
+<h1>Welcome to Javascript</h1>
+
+<%if @error%>
+<%=@error%>
+<%end%>
+
+<form id="login" action="/game" method="POST">
+    
+    <h3>First Player</h3>
+    <label for="user1_email">Email:</label>
+    <input type="text" name="user1_email" placeholder="your@email.com"><br><br>
+    <label for="user1_password">Password:</label>
+    <input input type="password" name="user1_password" placeholder="*******"><br><br>
+    
+    <h3>Second Player</h3>
+    <label for="user2_email">Email:</label>
+    <input type="text" name="user2_email" placeholder="your@email.com"><br><br>
+    <label for="user2_password">Password:</label>
+    <input input type="password" name="user2_password" placeholder="*******"><br><br>
+    
+    <input type="submit" name='Submit'><br>
+</form>
+<p>New user? <a href="/signup">Sign up here</a></p>
+</div>
